@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/alarmTimePicker"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".alarmactivity">
+
+
+    <TimePicker
+        android:id="@+id/Timepicker"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:padding="10dp"
+        android:layout_marginTop="50dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/timeTextview"
+        android:layout_centerHorizontal="true"
+        android:textColor="#090"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:text="TIME"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Timepicker"
+        android:layout_centerHorizontal="true"
+        android:onClick="setTimer"
+        android:layout_marginTop="11dp"
+        android:text="SET ALARM"/>
+
+</RelativeLayout>
